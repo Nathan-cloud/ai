@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
-      window.onload = function() {
-          var userAgent = navigator.userAgent.toLowerCase();
-          var isMobile = /mobile|tablet|ip(ad|hone|od)|android/i.test(userAgent);
-          
-          if (isMobile) {
-              window.location.href = 'mobile-only-page.html'; // Replace 'mobile.html' with the URL of your mobile version page
-          }
+      var userAgent = navigator.userAgent.toLowerCase();
+      var isMobile = /mobile|tablet|ip(ad|hone|od)|android/i.test(userAgent);
+      
+      if (isMobile) {
+          window.location.href = 'mobile-only-page.html'; // Replace 'mobile.html' with the URL of your mobile version page
+      } else {
+          window.location.href = 'index.html'; // Replace 'desktop.html' with the URL of your desktop version page
       }
-      </script>
+  </script>
   </head>
   <body>
     <div class="main-container">
