@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to SKYA</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+      window.onload = function() {
+          var userAgent = navigator.userAgent.toLowerCase();
+          var isMobile = /mobile|tablet|ip(ad|hone|od)|android/i.test(userAgent);
+          
+          if (isMobile) {
+              window.location.href = 'mobile-only-page.html'; // Replace 'mobile.html' with the URL of your mobile version page
+          }
+      }
+      </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="banner">
+        <div class="ds-search-bar">
+          <input type="search" name="" id="" class="cmp-advanced-search__form">
+            <div class="icon"></div>
+            
+          
+        </div>
+        <div class="icon-1"></div>
+        <span class="industries"> <a href="#">Industries</a></span
+          ><span class="services"><a href="#">Services</a></span
+          ><span class="careers"><a href="#">Careers</a></span
+          ><span class="navigation-menubar-menuitem"><a href="#">About</a></span>
+        <div class="link-deloitte-svg">
+          <div class="deloitte-svg-fill"><div class="deloitte-svg"></div></div>
+        </div>
+        <div class="link-contact-us"></div>
+        <div class="list-item-link-profile"></div>
+        <span class="button-be-en">BE-EN </span>
+        <div class="navigation-menubar-menuitem-link"></div>
+        <div class="navigation-menubar-menuitem-link-2"></div>
+        <div class="navigation-menubar-menuitem-link-3"></div>
+        <div class="navigation-menubar-menuitem-link-4"></div>
+        <div class="icon-5"></div>
+      </div>
+      <div class="div-banner">
+        <div class="div-top">
+          <span class="artificial-intelligence">Artificial Intelligence</span>
+          <div class="flex-row-bcf">
+            <span class="about">About</span
+            ><span class="in-the-spotlight">In the spotlight</span
+            ><span class="insights">Insights</span
+            ><span class="client-stories">Client stories</span
+            ><span class="events">Events</span
+            ><span class="get-in-touch">Get in touch</span
+            ><span class="list-item-link-connect">Connect for impact</span>
+          </div>
+        </div>
+        <div class="div-bottom">
+        <div class="be-ai-hero-x"></div>
+        <span class="heading-welcome-to"
+          >Welcome to the world of AI<br />Excellence!</span
+        ><span class="exploring-endless-possibilities"
+          >Exploring the endless possibilities of Artificial Intelligence,<br />empowering
+          your journey into the world of AI innovation<br />and expertise. In
+          our Belgian hub, we'll be updating this<br />space with our latest AI
+          insights. Stay tuned!</span
+        ><button class="button-link">
+          <span class="get-in-touch-6">Get in touch with our expert team</span>
+        </button>
+      </div>
+      </div>
+      <div class="div-about">
+
+        <div class="flex-column-d">
+          <span class="heading-empowering-enterprises"
+            >Empowering enterprises in the AI Ecosystem</span
+          ><span class="strong-ai-future-reality"
+            >Artificial intelligence (AI) is not just a future prospect; it is a
+            present reality, reshaping the way we live,<br />work, and conduct
+            business.</span
+          ><span class="to-stay-forefront-transformative"
+            >To stay at the forefront of this transformative technology, we have
+            created a dedicated AI hub focused on AI<br />research, expertise,
+            and practical innovation across various industries.</span
+          ><span class="ai-revolutionising-decision-making"
+            >AI is revolutionising decision-making within organisations,
+            optimising processes, fostering new capabilities and<br />businesses,
+            and driving sustainable value-generating activities. Deloitte is
+            committed to guiding both private and<br />public sector entities in
+            harnessing the potential and ethical applications of AI while
+            educating the industry on its<br />possibilities.</span
+          >
+        </div>
+  
+        <button class="chatbot-toggler">
+          <span class="apply-with">Apply with</span>
+          <img src="assets/images/daa88817-803a-4bed-b63e-2350ab03c802.png"  alt="">
+          <div class="group-7">
+            <div class="ellipse"></div>
+            <div class="ellipse-8"></div>
+            <div class="group-9"><div class="layer"></div></div>
+          </div>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="chatbot" style="background-color: #7c83f7; ">
+          <header  style="background-color: #7c83f7;">
+            
+            <span class="close-btn material-symbols-outlined"></span>
+          </header>
+          <ul class="chatbox " style="position: relative;
+          top: -71px; color: #fff;">
+            <h2 class="text-center">Welcome to </h2>
+            <h1 class=" text-center skya">SKYA</h1>
+            <img class="img-body"  src="./assets/images/0dc3b3e1-0dbc-4643-b753-b3381cffad29.png"  alt="">
+            <p class="display-message">Hello, I am your 
+              HR assistant!</p>
+          </ul>
+          <a href="login.html">
+          <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span  class="fa fa-paper-plane" id="send-btn"></span>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+<script>
+  const chatbotToggler = document.querySelector(".chatbot-toggler");
+const closeBtn = document.querySelector(".close-btn");
+const chatbox = document.querySelector(".chatbox");
+const chatInput = document.querySelector(".chat-input textarea");
+const sendChatBtn = document.querySelector(".chat-input span");
+
+
+
+closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+
+</script>
+  </body>
+</html>
