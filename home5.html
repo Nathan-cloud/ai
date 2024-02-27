@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" />
     <link rel="stylesheet" href="index.css" />
-    <script>
+    <style>
+      /* Hide the content until redirection */
+      body { display: none; }
+  </style>
+ <script>
+  // Function to detect device type and redirect accordingly
+  function redirectBasedOnDevice() {
       var userAgent = navigator.userAgent.toLowerCase();
       var isMobile = /mobile|tablet|ip(ad|hone|od)|android/i.test(userAgent);
       
       if (isMobile) {
-          window.location.href = 'mobile-only-page.html'; // Replace 'mobile.html' with the URL of your mobile version page
+          window.location.href = 'mobile-only-page.html'; // Redirect to mobile version
       } else {
-          window.location.href = 'index.html'; // Replace 'desktop.html' with the URL of your desktop version page
+          document.body.style.display = 'block'; // Show content for desktop users
       }
-  </script>
+  }
+
+  // Execute the redirection function when the page loads
+  window.onload = redirectBasedOnDevice;
+</script>
   </head>
   <body>
     <div class="main-container">
